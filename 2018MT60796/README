@@ -1,0 +1,27 @@
+COL759 Assignment-2
+
+Name     : Varre Harsha Vardhan;
+Entry no : 2018mt60796
+
+this code is written in python3 and GNU MP is installed to it. gmpy2 is used in the code and version 2.1.0.
+
+code running instructions:
+--> it was written in python3. the file is named as main.cpp. entire code is in one file.
+--> "python3 main.py" will compile and execute the code.
+--> output is not given to files but visible in the console.  
+--> the key(prime and primative root) and message is given in the code.
+
+working of hash function:
+
+-> it takes binary sting of length 256 as input and outputs a binary string of 32 bytes. 
+-> to convert the given message into a length a multiple of 256 we add spaces at the end.
+-> every character ex-"A" is written as a 5 bits string ex-"01001=9".
+-> hash function divides the hash into 4 equal parts say A,B,C,D. 
+-> B,C,D are combined with a non linear function to give a 64 bit output . 
+-> the given output is XOR with A (addition mod 2). to get E.
+-> the final hash is DEBC(left shift for B,C,D).
+-> de-hashing of a given binary hash is done on the principle if A xor B is C then B xor C is A.(A^B=C implies C^B=A)
+
+working of symmetric key cryptosystem. 
+
+-> it is inspired from DES(Data Encryption Standard) and working is similar except it only single round encryption.
